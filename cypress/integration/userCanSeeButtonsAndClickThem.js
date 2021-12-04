@@ -28,4 +28,3 @@ describe('User can click the buttons', () => {
     cy.get('[data-cy=scissors-button]').click()
   })
 })
-
