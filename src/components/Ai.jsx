@@ -1,14 +1,14 @@
 import React from 'react'
 import AiResponse from '../modules/AiResponse'
 
-import React from 'react'
-
 const Ai = () => {
   return (
     <div>
-      
+      <AiResponse />
     </div>
   )
 }
 
 export default Ai
+
+
