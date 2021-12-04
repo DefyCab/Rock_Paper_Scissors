@@ -1,11 +1,11 @@
 import React from 'react'
-import Ai from './components/Ai'
+import User from './components/User'
 
 const App = () => {
   return (
     <>
      <div>
-          <Ai />
+          <User />
     </div>
     </>
   )
