@@ -4,7 +4,8 @@ import AiIcons from './AiIcons'
 const Ai = () => {
   return (
     <div>
-      <AiIcons />
+      <h1>Test</h1>
+      <i aria-hidden="true" class="home mini icon"></i>
     </div>
   )
 }
