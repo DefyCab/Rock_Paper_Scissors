@@ -16,3 +16,11 @@ describe('User can make a selection between rock, paper and scissors', () => {
     expect(userNumber).to.eq(2)
   })
 })
+
+
+describe('User can see own choice, computer choice and result on screen', () => {
+  })
+
+it.only('is expected to show result of choice', () => {
+  cy.get('[data-cy=user-output]').should('have.text', )
+})

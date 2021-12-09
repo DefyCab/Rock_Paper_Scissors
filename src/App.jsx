@@ -83,10 +83,10 @@ const App = () => {
         <image data-cy="paper-icon"></image>
         <image data-cy="scissors-icon"></image>
 
-        <p>User: {`${userChoice()}`}</p>
-        <p>Computer: {`${compChoice()}`} </p>
+        <p data-cy="user-output">User: {`${userChoice()}`}</p>
+        <p data-cy="computer-output">Computer: {`${compChoice()}`} </p>
         <br></br>
-        <p>Result: {`${gameEngine()}`} </p>
+        <p data-cy="result-output">Result: {`${gameEngine()}`} </p>
       </div>
     </>
   )
