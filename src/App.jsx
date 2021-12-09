@@ -16,6 +16,26 @@ const [userNumber, setUserNumber] = useState()
     setRandomNumber (Math.floor(Math.random() * max))
   }
 
+  const gameEngine = () => {
+
+    if (userNumber === 0 && randomNumber === 1)
+    return "Computer win!"
+    if (userNumber === 0 && randomNumber === 2)
+    return "You win!"
+    if (userNumber === 1 && randomNumber === 0)
+    return "You win!"
+    if (userNumber === 1 && randomNumber === 2)
+    return "Computer win!"
+    if (userNumber === 2 && randomNumber === 1)
+    return "You win!"
+    if (userNumber === 2 && randomNumber === 0)
+    return "Computer win!"
+    else if (userNumber === 4)
+    return ""
+    else
+    return "It's a tie!"
+  }
+
   return (
     <>
       <div>
@@ -33,8 +53,10 @@ const [userNumber, setUserNumber] = useState()
         <image data-cy="paper-icon"></image>
         <image data-cy="scissors-icon"></image>
 
-        <p> User selection: {userNumber}</p>
-        <p> Ai number: {randomNumber}</p>
+        <p>User: {userNumber}</p>
+        <p>Computer: {randomNumber}</p>
+        <br></br>
+        <p>Result: {`${gameEngine()}`} </p>
       </div>
     </>
   )
