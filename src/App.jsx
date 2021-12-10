@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button } from "semantic-ui-react"
-import "semantic-ui-css/semantic.min.css"
+import { Button } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
 
 const App = () => {
   const [userNumber, setUserNumber] = useState(4);
@@ -43,7 +43,8 @@ const App = () => {
   return (
     <>
       <div>
-        <Button color="teal"
+        <Button
+          color="teal"
           size="massive"
           data-cy="rock-button"
           onClick={() => {
@@ -53,7 +54,8 @@ const App = () => {
         >
           Rock
         </Button>
-        <Button color="green"
+        <Button
+          color="green"
           size="massive"
           data-cy="paper-button"
           onClick={() => {
@@ -63,7 +65,8 @@ const App = () => {
         >
           Paper
         </Button>
-        <Button color="purple"
+        <Button
+          color="purple"
           size="massive"
           data-cy="scissors-button"
           onClick={() => {
@@ -73,15 +76,11 @@ const App = () => {
         >
           Scissors
         </Button>
-
-        <image data-cy="rock-icon"></image>
-        <image data-cy="paper-icon"></image>
-        <image data-cy="scissors-icon"></image>
-
-        <p data-cy="user-output">User: {`${userChoice()}`}</p>
-        <p data-cy="computer-output">Computer: {`${compChoice()}`} </p>
         <br></br>
-        <p data-cy="result-output">Result: {`${gameEngine()}`} </p>
+        <h2 data-cy="user-output">Your move: {`${userChoice()}`}</h2>
+        <h2 data-cy="computer-output">Computer's move: {`${compChoice()}`} </h2>
+        <p></p>
+        <h2 data-cy="result-output">The result: {`${gameEngine()}`} </h2>
       </div>
     </>
   );
